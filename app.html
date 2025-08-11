@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarante-Deux Le Jeu | Application</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Quarante-Deux Le Jeu">
+                <h1>Quarante-Deux</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="home">Accueil</a></li>
+                    <li><a href="game.html" data-i18n="game">Le Jeu</a></li>
+                    <li><a href="app.html" class="active" data-i18n="app">Application</a></li>
+                    <li><a href="author.html" data-i18n="author">Auteur</a></li>
+                    <li><a href="privacy.html" data-i18n="privacy">Confidentialité</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="app-hero">
+            <div class="container">
+                <div class="app-hero-content">
+                    <h2 data-i18n="app_hero_title">Quarante-Deux sur votre mobile</h2>
+                    <p data-i18n="app_hero_text">Emportez le plaisir du jeu partout avec vous grâce à notre application officielle pour Android.</p>
+                    <div class="app-download">
+                        <a href="https://play.google.com/store" class="btn primary" data-i18n="download_app">Télécharger sur Google Play</a>
+                        <div class="app-rating">
+                            <div class="stars">★★★★★</div>
+                            <span data-i18n="rating_text">4.8/5 - 1,200+ téléchargements</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-hero-image">
+                    <img src="images/app-screenshot1.png" alt="Capture d'écran de l'application">
+                </div>
+            </div>
+        </section>
+
+        <section class="app-features">
+            <div class="container">
+                <h2 data-i18n="features_title">Fonctionnalités de l'application</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎮</div>
+                        <h3 data-i18n="app_feature1_title">Jeu solo contre l'IA</h3>
+                        <p data-i18n="app_feature1_text">Affrontez des adversaires virtuels avec différents niveaux de difficulté.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3 data-i18n="app_feature2_title">Multijoueur local</h3>
+                        <p data-i18n="app_feature2_text">Jouez avec des amis sur le même appareil, idéal pour les soirées.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌐</div>
+                        <h3 data-i18n="app_feature3_title">Multijoueur en ligne</h3>
+                        <p data-i18n="app_feature3_text">Défiez des joueurs du monde entier en temps réel.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3 data-i18n="app_feature4_title">Statistiques détaillées</h3>
+                        <p data-i18n="app_feature4_text">Suivez vos performances, vos records et votre progression.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3 data-i18n="app_feature5_title">Personnalisation</h3>
+                        <p data-i18n="app_feature5_text">Choisissez parmi différents thèmes visuels et designs de dés.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔔</div>
+                        <h3 data-i18n="app_feature6_title">Notifications</h3>
+                        <p data-i18n="app_feature6_text">Recevez des défis et rappels pour ne jamais manquer une partie.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="app-screenshots">
+            <div class="container">
+                <h2 data-i18n="screenshots_title">Galerie d'écrans</h2>
+                <div class="screenshots-grid">
+                    <div class="screenshot">
+                        <img src="images/app-screenshot1.png" alt="Capture d'écran du jeu">
+                        <p data-i18n="screenshot1_desc">Interface de jeu intuitive</p>
+                    </div>
+                    <div class="screenshot">
+                        <img src="images/app-screenshot2.png" alt="Capture d'écran des statistiques">
+                        <p data-i18n="screenshot2_desc">Suivi des statistiques</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="app-testimonials">
+            <div class="container">
+                <h2 data-i18n="testimonials_title">Ce que disent les joueurs</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p data-i18n="testimonial1_text">"Addictif ! La meilleure version numérique d'un jeu de dés que j'ai trouvée. Les animations sont superbes et le jeu est fluide."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-name" data-i18n="testimonial1_author">- Marie D.</div>
+                            <div class="author-rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p data-i18n="testimonial2_text">"Parfait pour jouer avec des amis quand on ne peut pas se voir en personne. Le mode multijoueur en ligne fonctionne parfaitement."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-name" data-i18n="testimonial2_author">- Thomas L.</div>
+                            <div class="author-rating">★★★★☆</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p data-i18n="testimonial3_text">"J'adore le défi du 4-2 qui demande des réflexes. Ça ajoute une dimension excitante au jeu traditionnel."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-name" data-i18n="testimonial3_author">- Sophie K.</div>
+                            <div class="author-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="app-download-cta">
+            <div class="container">
+                <h2 data-i18n="download_cta_title">Prêt à jouer ?</h2>
+                <p data-i18n="download_cta_text">Téléchargez gratuitement l'application Quarante-Deux et commencez à jouer dès maintenant !</p>
+                <a href="https://play.google.com/store" class="btn primary large" data-i18n="download_now">Télécharger maintenant</a>
+                <p class="small-text" data-i18n="compatibility_text">Compatibles avec Android 8.0 et versions ultérieures. Aucun achat in-app nécessaire.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Quarante-Deux Le Jeu">
+                    <h3>Quarante-Deux</h3>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html" data-i18n="home">Accueil</a></li>
+                        <li><a href="game.html" data-i18n="game">Le Jeu</a></li>
+                        <li><a href="app.html" data-i18n="app">Application</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="author.html" data-i18n="author">Auteur</a></li>
+                        <li><a href="privacy.html" data-i18n="privacy">Confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <p data-i18n="follow_us">Suivez-nous :</p>
+                    <div class="social-icons">
+                        <a href="#"><span class="icon">📱</span></a>
+                        <a href="#"><span class="icon">📘</span></a>
+                        <a href="#"><span class="icon">📸</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="copyright">&copy; 2023 Quarante-Deux Le Jeu. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/language-switcher.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarante-Deux Le Jeu | Le Jeu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Quarante-Deux Le Jeu">
+                <h1>Quarante-Deux</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="home">Accueil</a></li>
+                    <li><a href="game.html" class="active" data-i18n="game">Le Jeu</a></li>
+                    <li><a href="app.html" data-i18n="app">Application</a></li>
+                    <li><a href="author.html" data-i18n="author">Auteur</a></li>
+                    <li><a href="privacy.html" data-i18n="privacy">Confidentialité</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="game-intro">
+            <div class="container">
+                <h2 data-i18n="game_intro_title">Quarante-Deux : L'esprit du jeu</h2>
+                <div class="content-grid">
+                    <div class="text-content">
+                        <p data-i18n="game_intro_text1">Quarante-Deux est bien plus qu'un simple jeu de dés. C'est une expérience sociale, un prétexte à la convivialité, un moment de partage et de rires.</p>
+                        <p data-i18n="game_intro_text2">Imaginez une terrasse ensoleillée, des amis autour d'une table, le bruit caractéristique des dés qui s'entrechoquent dans un gobelet, les exclamations lorsque le fameux "4 et 2" apparaît...</p>
+                        <p data-i18n="game_intro_text3">Ce jeu est né de ces moments simples mais précieux où le temps semble suspendu le temps d'une partie.</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="images/cafe-terrace.jpg" alt="Personnes jouant aux dés sur une terrasse">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rules-section">
+            <div class="container">
+                <h2 data-i18n="rules_title">Règles du jeu</h2>
+                
+                <div class="rule-card">
+                    <div class="rule-number">1</div>
+                    <div class="rule-content">
+                        <h3 data-i18n="rule1_title">But du jeu</h3>
+                        <p data-i18n="rule1_text">Être le premier joueur à atteindre ou dépasser 210 points en accumulant des points tour après tour.</p>
+                    </div>
+                </div>
+                
+                <div class="rule-card">
+                    <div class="rule-number">2</div>
+                    <div class="rule-content">
+                        <h3 data-i18n="rule2_title">Déroulement d'un tour</h3>
+                        <p data-i18n="rule2_text">À son tour, le joueur lance les dés autant de fois qu'il le souhaite et accumule les points. À tout moment, il peut choisir de s'arrêter ("Stop") pour ajouter les points accumulés à son score total.</p>
+                    </div>
+                </div>
+                
+                <div class="rule-card">
+                    <div class="rule-number">3</div>
+                    <div class="rule-content">
+                        <h3 data-i18n="rule3_title">Valeur des lancers</h3>
+                        <p data-i18n="rule3_text">Un lancer vaut la somme des deux dés (par exemple 5+3 = 8 points), sauf dans les cas particuliers suivants :</p>
+                    </div>
+                </div>
+                
+                <div class="special-rules">
+                    <div class="special-rule">
+                        <div class="dice-combination">
+                            <img src="images/dice-1.png" alt="Dé 1">
+                            <img src="images/dice-2.png" alt="Dé 2">
+                        </div>
+                        <div class="special-rule-content">
+                            <h4 data-i18n="special_rule1_title">Suite (1-2, 2-3, etc.)</h4>
+                            <p data-i18n="special_rule1_text">Bonus de 10 points (ex: 1+2 = 3 + 10 = 13 points)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="special-rule">
+                        <div class="dice-combination">
+                            <img src="images/dice-3.png" alt="Dé 3">
+                            <img src="images/dice-3.png" alt="Dé 3">
+                        </div>
+                        <div class="special-rule-content">
+                            <h4 data-i18n="special_rule2_title">Double (deux dés identiques)</h4>
+                            <p data-i18n="special_rule2_text">Le joueur perd tous les points du tour et son tour se termine immédiatement.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="special-rule">
+                        <div class="dice-combination">
+                            <img src="images/dice-5.png" alt="Dé 5">
+                            <img src="images/dice-3.png" alt="Dé 3">
+                            <span class="equals">=</span>
+                            <img src="images/dice-3.png" alt="Dé 3">
+                            <img src="images/dice-5.png" alt="Dé 5">
+                        </div>
+                        <div class="special-rule-content">
+                            <h4 data-i18n="special_rule3_title">Lancer identique au précédent</h4>
+                            <p data-i18n="special_rule3_text">Le joueur perd tous les points du tour et son tour se termine immédiatement. L'ordre des dés n'a pas d'importance (5-3 est identique à 3-5).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="special-rule highlight">
+                        <div class="dice-combination">
+                            <img src="images/dice-4.png" alt="Dé 4">
+                            <img src="images/dice-2.png" alt="Dé 2">
+                        </div>
+                        <div class="special-rule-content">
+                            <h4 data-i18n="special_rule4_title">Le fameux 4 et 2</h4>
+                            <p data-i18n="special_rule4_text">Si le joueur crie "42" (ou clique le bouton dans l'app) dans les 0.5 secondes, le lancer vaut 42 points. Sinon, il vaut 6 points (4+2).</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rule-card">
+                    <div class="rule-number">4</div>
+                    <div class="rule-content">
+                        <h3 data-i18n="rule4_title">Fin de la partie</h3>
+                        <p data-i18n="rule4_text">Le premier joueur à atteindre ou dépasser 210 points gagne la partie. Si plusieurs joueurs atteignent 210 points dans le même tour, celui avec le score le plus élevé l'emporte.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="strategy-tips">
+            <div class="container">
+                <h2 data-i18n="strategy_title">Conseils stratégiques</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h3 data-i18n="tip1_title">Gérez votre risque</h3>
+                        <p data-i18n="tip1_text">Plus vous accumulez de points dans un tour, plus le risque de perdre tout est grand. Apprenez à vous arrêter à temps.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3 data-i18n="tip2_title">Mémoire des lancers</h3>
+                        <p data-i18n="tip2_text">Souvenez-vous de votre dernier lancer pour éviter de faire le même et perdre vos points.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3 data-i18n="tip3_title">Anticipez le 4-2</h3>
+                        <p data-i18n="tip3_text">Soyez toujours prêt à crier "42" quand vous lancez les dés, surtout si vous avez besoin de beaucoup de points.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Quarante-Deux Le Jeu">
+                    <h3>Quarante-Deux</h3>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html" data-i18n="home">Accueil</a></li>
+                        <li><a href="game.html" data-i18n="game">Le Jeu</a></li>
+                        <li><a href="app.html" data-i18n="app">Application</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="author.html" data-i18n="author">Auteur</a></li>
+                        <li><a href="privacy.html" data-i18n="privacy">Confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <p data-i18n="follow_us">Suivez-nous :</p>
+                    <div class="social-icons">
+                        <a href="#"><span class="icon">📱</span></a>
+                        <a href="#"><span class="icon">📘</span></a>
+                        <a href="#"><span class="icon">📸</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="copyright">&copy; 2023 Quarante-Deux Le Jeu. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/language-switcher.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
