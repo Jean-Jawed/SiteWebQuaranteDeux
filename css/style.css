@@ -380,6 +380,7 @@ nav {
     padding: 20px;
     display: flex;
     align-items: center;
+    gap: 20px;
     transition: var(--transition);
 }
 
@@ -394,9 +395,9 @@ nav {
 }
 
 .dice-combination {
+    flex-shrink: 0;
     display: flex;
     align-items: center;
-    margin-right: 20px;
 }
 
 .dice-combination img {
